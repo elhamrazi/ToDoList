@@ -1,5 +1,5 @@
-const {register, login, getCurrentUser} = require("./auth");
-const {showTodos, addTodo } = require("./todos");
+const {register, login, getCurrentUser} = require("./controllers/auth");
+const {showTodos, addTodo } = require("./controllers/todos");
 const express = require("express");
 const router = express.Router();
 const auth = require('./middleware/verifyAuth');
